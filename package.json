@@ -1,5 +1,5 @@
 {
-  "name": "zadanie_16_4",
+  "name": "zadanie_16_5",
   "version": "1.0.0",
   "description": "Webpack + React, TODO",
   "main": "webpack.config.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomasz-konecki/zadanie_16_4.git"
+    "url": "git+https://github.com/tomasz-konecki/zadanie_16_5.git"
   },
   "author": "TK",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tomasz-konecki/zadanie_16_4/issues"
+    "url": "https://github.com/tomasz-konecki/zadanie_16_5/issues"
   },
-  "homepage": "https://github.com/tomasz-konecki/zadanie_16_4#readme",
+  "homepage": "https://github.com/tomasz-konecki/zadanie_16_5#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
