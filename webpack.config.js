@@ -1,7 +1,7 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-var OptimizeJsPlugin = require('optimize-js-plugin');
+const webpack = require('webpack'),
+    HtmlWebpackPlugin = require('html-webpack-plugin'),
+    UglifyJSPlugin = require('uglifyjs-webpack-plugin'),
+    OptimizeJsPlugin = require('optimize-js-plugin');
 
 module.exports = {
     entry: './src/index.js',

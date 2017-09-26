@@ -2,6 +2,7 @@ import React from 'react';
 import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title';
+import TodoList from '../components/TodoList';
 
 class App extends React.Component {
     constructor(props) {
@@ -42,19 +43,12 @@ class App extends React.Component {
     }
 
     render() {
-        const list = this.state.data.map((item) => {
-            return (
-                <li key={item.id}>
-                    <p>{item.text}</p>
-                </li>
-            )
-        });
-
         return (
             <div className={style.TodoApp}>
-                <Title title="APPLICATION 'TODO'"/>
-                <ul>{list}</ul>
-                <p>Number of tasks: {list.length}</p>
+                <Title title="APPLICATION 'TODO'" />
+                <TodoList list={this.state.data} />
+
+                <p>Number of tasks: {this.state.data.length}</p>
             </div>
         );
     }
