@@ -3,16 +3,16 @@ import React from 'react';
 const TodoList = props => {
     const tasks = props.list.map((item) => {
         return (
-            <li key={item.id}>
-                <p>{item.text}</p>
-            </li>
+            <a href={'#'} onClick={() => item.remove(item.id)} key={item.id}>
+                {item.text}
+            </a>
         )
     });
 
     return (
-        <ul>
+        <nav>
             {tasks}
-        </ul>
+        </nav>
     )
 }
 
