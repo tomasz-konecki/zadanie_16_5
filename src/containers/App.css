@@ -11,6 +11,6 @@
     width: 100vw;
     height: 100vh;
 }
-ul li {
-    color: teal;
+.number {
+    margin-top: 0;
 }

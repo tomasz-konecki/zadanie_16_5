@@ -1,0 +1,17 @@
+.TodoList {
+    display: flex;
+    flex-direction: column;
+}
+.task {
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    color: #03174f;
+    background-color: #D3D3D3;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.task:active {
+    color: #686868;
+    background-color: #bfbdbd;
+}

@@ -11,17 +11,22 @@ class App extends React.Component {
             data: [
                 {
                     text: 'Do something 1',
-                    id: 1234,
+                    id: 1,
                     remove: this.removeTodo.bind(this)
                 },
                 {
                     text: 'Do something 2',
-                    id: 5678,
+                    id: 2,
                     remove: this.removeTodo.bind(this)
                 },
                 {
                     text: 'Do something 3',
-                    id: 9876,
+                    id: 3,
+                    remove: this.removeTodo.bind(this)
+                },
+                {
+                    text: 'Do something 4',
+                    id: 4,
                     remove: this.removeTodo.bind(this)
                 }
 
@@ -49,9 +54,9 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Title title="APPLICATION 'TODO'" />
+                <p className={style.number}>Number of tasks: {this.state.data.length}</p>
                 <TodoList list={this.state.data} />
 
-                <p>Number of tasks: {this.state.data.length}</p>
             </div>
         );
     }
